@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS523: Digital Circuits Design Lab Using EDA Tools (Spring 2025)</title>
+  <meta name="description" content="Department of Computer Science, University of Crete, CS-523: Digital Circuits Design Using EDA Tools">
+  <meta name="keywords" content ="digital circuits, elective courses, graduate courses, computer science, computer engineering"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- ALERTS -->
+  <div class="row">
+    <div class="col-md-12">
+      <!--div class="alert alert-danger" role="alert"-->
+      <!--div class="alert alert-success" role="alert"-->
+      <!--div class="alert alert-info" role="alert"-->
+      <!--div class="alert alert-warning" role="alert"-->
+      <!--
+      <div class="alert alert-success myalert" role="alert">
+        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+        <b>Announcement</b>
+      </div>
+      -->
+      <!--
+      <div class="alert alert-danger myalert" role="alert">
+        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+        The lectures will start <b>Monday February 15th 2021 at 14.10</b> via the online platform Zoom.
+        <p>You can connect to Zoom via the green button further down</p>
+        <br>
+        <b>Subscribe to the mailing list</b> for announcements and updates related to the course.
+        <br>
+        [ Send e-mail to "majordomo@csd.uoc.gr" with body "subscribe hy523-list" ]
+      </div>
+      -->
+    </div>
+  </div>
+
+  <!-- ______________________________________________________________________________________________ -->
+
+  <!-- HEADER -->
+  <div class="row">
+    <div class="col-md-1 hidden-xs">
+       <img src="./assets/images/chip-523.png" class="myimg img-responsive img-rounded center-block">
+    </div>
+    <div class="col-md-11">
+      <h3 class="mytitle">
+        CS523: Digital Circuits Design Lab Using EDA Tools (Spring 2025)
+      </h3>
+      <h5>
+        <a href="http://www.csd.uoc.gr/" target="_new">Department of Computer Science</a>,
+        <a href="http://www.uoc.gr/" target="_new">University of Crete</a>
+      </h5>
+    </div>
+  </div>
+  <!-- ______________________________________________________________________________________________ -->
+
+  
+  <!-- NAVIGATION TABS -->
+  <ul class="nav nav-pills nav-justified bg-info">
+    <li class="active">
+      <a data-toggle="pill" href="#course"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course</a>
+    </li>
+    <li>
+      <a data-toggle="pill" href="#lectures"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lectures <span class="badge"></span></a>
+    </li>
+    <li>
+      <a data-toggle="pill" href="#assignments"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Assignments <span class="badge alert-danger"></span></a>
+    </li>
+    <li>
+      <a data-toggle="pill" href="#archive"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Archive</a>
+    </li>
+  </ul>
+  <hr>
+  <!-- ______________________________________________________________________________________________ -->
+
+  <div class="tab-content">
+
+    <!-- COURSE/MAIN/HOME -->
+    <div id="course" class="tab-pane fade in active">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Schedule</h3>
+            </div>
+            <div class="panel-body">
+              <p>
+                <b>Class hours:</b> Tuesday and Thursday 18.15 - 20.00 in room A.125
+              </p>
+              <!--
+              <div class="alert alert-warning myalert" role="alert">
+                <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                Friday classes will be held as needed (14:15 - 16:00) to make up in case of instructor's absence during regular class meeting times. 
+              </div>
+              <p>
+                <b>Online Lectures:</b>
+                &nbsp;<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>&nbsp;
+                <a class="btn btn-success btn-xs" role="button" href="https://zoom.us/j/99854518523?pwd=MEhsVi8zR1J5NmNTMmhWcGtTZ1dsdz09" target="_new">
+                  <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Zoom
+                </a>
+              </p>
+              -->
+
+              <p>
+                <!--<b>Office hours:</b> Wednesday 16:15 - 18:00 @ K319 (preferably by appointment)-->
+                <b>Office hours:</b> By Appointment @ K319
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Staff</h3>
+            </div>
+            <!--div class="panel-body">
+            </div-->
+            <table class="table table-bordered">
+              <tr>
+                <td>
+                  <b>Instructors</b>
+                </td>
+                <td>
+                  <b>Teaching Assistants</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://sites.google.com/site/papaef/" target="_new">Dr. Vassilis Papaefstathiou</a>
+                </td>
+                <td>
+                  Mr. Michalis Giaourtas
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  Mr. Theocharis Vavouris
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Information</h3>
+        </div>
+        <!-- div class="panel-body">
+        </div -->
+        <table class="table table-bordered">
+          <tr>
+            <td>
+              <b>Area:</b> 
+            </td>
+            <td>
+              Microelectronic Systems Architecture (A) - <i>M.Sc. Program</i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Description:</b> 
+            </td>
+            <td>
+              Electronic Design Automation (EDA) flows and Computer Aided Design (CAD) tools for digital circuit design. Advanced features of Hardware Description Languages (Verilog, VHDL). Behavioral and structural models. Simulation: algorithms and tools. Timing analysis. Design verification: input stimuli, output checking, simulations with models at different abstraction levels. Digital circuit testing and design for testability (DFT). Synthesizable description and logic synthesis tools (e.g. Xilinx Vivado, Synopsys Design Compiler). Placement and Routing: tools and techniques. Incremental design flows (back-annotation, ECO, LVS). Examples on FPGA and ASIC technologies. Using available IP cores to build System-on-Chip (SoC). Laboratory assignments on designing and verifying digital systems of medium complexity using the presented tools and flows for multiple target technologies (FPGA and ASIC).
+              <!--
+              Οι ηλεκτρονικά αυτοματοποιημένες διαδικασίες σχεδίασης (electronic design automation - EDA flows) ψηφιακών συστημάτων και τα συναφή εργαλεία σχεδίασης με τη βοήθεια υπολογιστή (computer aided design - CAD tools). Γλώσσες περιγραφής υλικού (Verilog, VHDL): επανάληψη και εμβάθυνση. Μοντέλα επιπέδου συμπεριφοράς και μοντέλα επιπέδου δομής. Προσομοίωση: αλγόριθμοι και εργαλεία.  Ανάλυση χρονισμού. Επαλήθευση σχεδίασης: είσοδοι δοκιμής, επαλήθευση εξόδων, ταυτόχρονη προσομοίωση πολλαπλών μοντέλων σε διάφορα επίπεδα αφαίρεσης. Έλεγχος ψηφιακών συστημάτων και σχεδίαση για ελεγξιμότητα. Συνθέσιμες περιγραφές και αυτόματη σύνθεση υλικού (π.χ. Synopsys). Τοποθέτηση στοιχείων και δρομολόγηση συνδέσεων: εργαλεία και τεχνικές. Επαναληπτική βελτίωση σχεδίασης (back-annotation, ECO, LVS). Παραδείγματα σε τεχνολογίες FPGA και ASIC. Χρήση έτοιμων πυρήνων (IP cores), συστήματα πάνω σε ένα chip (SoC). Εργαστήριο πλήρους (συνεργατικής) σχεδίασης και επαλήθευσης ψηφιακού συστήματος μέτριας πολυπλοκότητας, με χρήση των διδασκομένων εργαλείων και για πολλαπλές τεχνολογίες στόχου (FPGA και ASIC).
+              -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>ECTS:</b> 
+            </td>
+            <td>
+              6
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Prerequisites:</b> 
+            </td>
+            <td>
+              <a href="http://www.csd.uoc.gr/~hy220" target="_new">CS220 - Digital Circuits Lab</a>
+              <br>
+              <a href="http://www.csd.uoc.gr/~hy225" target="_new">CS225 - Computer Organization</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Grading:</b> 
+            </td>
+            <td>
+              Lab Assignments: 30%
+              <br>
+              Project: 60%
+              <br>
+              Class Participation: 10%
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Mailing-list:
+            </td>
+            <td>
+              hy523-list <u>at</u> csd <u>dot</u> uoc <u>dot</u> gr
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ACKNOWLEDGEMENTS -->
+      <div class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 
+        We deeply appreciate the strong support provided to this course by the <a href="http://www.ics.forth.gr/carv" class="alert-link" target="_new">Computer Architecture and VLSI Systems (CARV) Laboratory</a> of the Institute of Computer Science of FORTH through human resources and training of students on state-of-the-art EDA tools. 
+      </div>
+
+    </div>
+    <!-- ______________________________________________________________________________________________ -->
+
+    <!-- LECTURES -->
+    <div id="lectures" class="tab-pane fade">
+      <div class="alert alert-warning" role="alert">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        Course material will be made available only on the internal website accessible from the university's subnet. 
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lectures Schedule (Tentative)</h3>
+        </div>
+        <!--div class="panel-body">
+        </div-->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Material</th>
+              <th>Reading List</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><b>Week 01:</b> 10 Feb. - 14 Feb. 2025</td>
+              <td>Introduction to Design Flows</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 02:</b> 17 Feb. - 21 Feb. 2025</td>
+              <td>Hardware Description Languages (SystemVerilog)</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 03:</b> 24 Feb. - 28 Feb. 2025</td>
+              <td>Advanced HDL Features (SystemVerilog)</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 04:</b> 03 Mar. - 07 Mar. 2025</td>
+              <td>Functional Verification (SystemVerilog & UVM)</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 05:</b> 10 Mar. - 14 Mar. 2025</td>
+              <td>Simulation: Algorithms and Tools</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 06:</b> 17 Mar. - 21 Mar. 2025</td>
+              <td>Logic Synthesis</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 07:</b> 24 Mar. - 28 Mar. 2025</td>
+              <td>Static Timing Analysis</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 08:</b> 31 Mar. - 04 Apr. 2025</td>
+              <td>Design for Testability</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 09:</b> 07 Apr. - 11 Apr. 2025</td>
+              <td>Floorplanning and Power Planning</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr class="info">
+              <td>14 Apr. - 27 Apr. 2025</td>
+              <td>Easter Holiday Weeks</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 10:</b> 28 Apr. - 02 May 2025</td>
+              <td>Placement</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 11:</b> 05 May - 09 May 2025</td>
+              <td>Routing</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 12:</b> 12 May - 16 May 2025</td>
+              <td>Power Optimization</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+
+            <tr>
+              <td><b>Week 13:</b> 19 May - 23 May 2025</td>
+              <td>Physical Verification</td> 
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- ______________________________________________________________________________________________ -->
+
+    <!-- ASSIGNMENTS -->
+    <div id="assignments" class="tab-pane fade">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Laboratory Assignments (Tentative)</h3>
+        </div>
+        <!--div class="panel-body">
+        </div-->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Material</th>
+              <th>Deadline</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td><b>Week 04</b></td>
+              <td>Lab 1: SystemVerilog Testbenches</td> 
+              <td></td>
+              <td class="text-danger"><b>Week 06</b></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 07</b></td>
+              <td>Lab 2: Logic Synthesis</td> 
+              <td></td>
+              <td class="text-danger"><b>Week 08</b></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 09</b></td>
+              <td>Lab 3: Physical Design and Implementation</td> 
+              <td></td>
+              <td class="text-danger"><b>Week 11</b></td>
+            </tr>
+
+            <tr>
+              <td><b>Week 10</b></td>
+              <td>Student Projects</td> 
+              <td></td>
+              <td class="text-danger"><b>Week 13</b></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- ______________________________________________________________________________________________ -->
+
+    <!-- ARCHIVE -->
+    <div id="archive" class="tab-pane fade">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Websites from Previous Years</h3>
+        </div>
+        <!--div class="panel-body">
+        </div-->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2024s/index.html">Spring 2024</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2023s/index.html">Spring 2023</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2022s/index.html">Spring 2022</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2021s/index.html">Spring 2021</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2020s/index.html">Spring 2020</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2019s/index.html">Spring 2019</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2018s/index.html">Spring 2018</a> (taught by V. Papaefstathiou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2012-2013f/index.html">Fall 2012</a> (taught by C. Sotiriou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2011-2012f/index.html">Fall 2011</a> (taught by C. Sotiriou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2010-2011f/index.html">Fall 2010</a> (taught by C. Sotiriou)
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.csd.uoc.gr/~hy523/2008-2009f/index.html">Fall 2008</a> (taught by C. Sotiriou)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ______________________________________________________________________________________________ -->
+
+  </div> <!-- END TAB-CONTENT-->
+
+  <!-- FOOTER -->
+  <div class="well well-sm" align="right">
+    <i><b>Last update:</b> 18 Feb. 2025</i> - by V. Papaefstathiou
+  </div>
+  <!-- ______________________________________________________________________________________________ -->
+
+</div>
+</body>
+</html>

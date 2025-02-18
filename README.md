@@ -1,1 +1,1 @@
-# hy523_2025s
+# HY523 2025s Webpage Repository
